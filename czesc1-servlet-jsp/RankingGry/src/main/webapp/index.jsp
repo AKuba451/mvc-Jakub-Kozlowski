@@ -5,7 +5,7 @@
     <title>Ranking Gier</title>
 </head>
 <body>
-<h1>RankingGier – część I</h1>
+<h1>Ranking Gier – część I</h1>
 
 <p><a href="hello">Wyślij żądanie GET do /hello</a></p>
 
