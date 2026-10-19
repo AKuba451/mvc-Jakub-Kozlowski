@@ -12,7 +12,7 @@ import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet("/books/add")
+@WebServlet("/games/add")
 public class GameFormServlet extends HttpServlet {
 
     @Override
@@ -26,28 +26,28 @@ public class GameFormServlet extends HttpServlet {
             throws IOException {
         req.setCharacterEncoding("UTF-8");
         String title = trim(req.getParameter("title"));
-        String author = trim(req.getParameter("author"));
+        String producent = trim(req.getParameter("producent"));
         String year = trim(req.getParameter("year"));
 
         // walidacja po stronie serwera
         List<String> errors = new ArrayList<>();
         if (title.isEmpty()) errors.add("Tytuł jest wymagany.");
-        if (author.isEmpty()) errors.add("Autor jest wymagany.");
+        if (producent.isEmpty()) errors.add("Producent jest wymagany.");
         try {
             int y = Integer.parseInt(year);
             int now = Year.now().getValue();
             if (y < 1450 || y > now) errors.add("Rok musi mieścić się w zakresie 1450–" + now + ".");
         } catch (NumberFormatException e) {
-            errors.add("Rok wydania musi być liczbą.");
+            errors.add("Rok wydania gry musi być liczbą.");
         }
 
         if (!errors.isEmpty()) {
-            renderForm(resp, errors, title, author, year);   // pokaż formularz z błędami
+            renderForm(resp, errors, title, producent, year);   // pokaż formularz z błędami
             return;
         }
         // sukces: przekierowanie (wzorzec Post/Redirect/Get)
         String encoded = URLEncoder.encode(title, StandardCharsets.UTF_8);
-        resp.sendRedirect(req.getContextPath() + "/books/added?title=" + encoded);
+        resp.sendRedirect(req.getContextPath() + "/games/added?title=" + encoded);
     }
 
     private String trim(String value) {
@@ -55,17 +55,17 @@ public class GameFormServlet extends HttpServlet {
     }
 
     private void renderForm(HttpServletResponse resp, List<String> errors,
-                            String title, String author, String year) throws IOException {
+                            String title, String producent, String year) throws IOException {
         resp.setContentType("text/html;charset=UTF-8");
         PrintWriter out = resp.getWriter();
-        out.println("<!DOCTYPE html><html><body><h1>Dodaj książkę</h1>");
+        out.println("<!DOCTYPE html><html><body><h1>Dodaj nową grę: </h1>");
         for (String error : errors) {
             out.println("<p style='color:red'>" + error + "</p>");
         }
         out.println("<form method='post'>");
         out.println("<p>Tytuł: <input name='title' value='" + title + "'></p>");
-        out.println("<p>Autor: <input name='author' value='" + author + "'></p>");
-        out.println("<p>Rok wydania: <input name='year' value='" + year + "'></p>");
+        out.println("<p>Producent: <input name='producent' value='" + producent + "'></p>");
+        out.println("<p>Rok wydania gry: <input name='year' value='" + year + "'></p>");
         out.println("<button type='submit'>Zapisz</button></form></body></html>");
     }
 }

@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet("/books/added")
+@WebServlet("/games/added")
 public class GameAddedServlet extends HttpServlet {
 
     @Override
@@ -15,7 +15,7 @@ public class GameAddedServlet extends HttpServlet {
             throws IOException {
         resp.setContentType("text/html;charset=UTF-8");
         resp.getWriter().println("<!DOCTYPE html><html><body>"
-                + "<h1>Zapisano książkę: " + req.getParameter("title") + "</h1>"
+                + "<h1>Zapisano Grę: " + req.getParameter("title") + " w bazie danych!" + "</h1>"
                 + "<a href='add'>Dodaj kolejną</a></body></html>");
     }
 }
