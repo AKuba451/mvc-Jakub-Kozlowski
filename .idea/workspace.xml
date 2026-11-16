@@ -9,13 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34e6960d-37cc-4265-9485-79d0a21951ec" name="Changes" comment="">
+    <list default="true" id="34e6960d-37cc-4265-9485-79d0a21951ec" name="Changes" comment="Etap 3: Przerobienie strony z html na jsp, dodanie style.css, utworzenie strony głównej oraz formsa do dodawania gier do rankingu.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/czesc1-servlet-jsp/RankingGry/src/main/java/pl/merito/rankinggry/controller/GameAddedServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/czesc1-servlet-jsp/RankingGry/src/main/java/pl/merito/rankinggry/controller/GameAddedServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/czesc1-servlet-jsp/RankingGry/src/main/java/pl/merito/rankinggry/controller/GameFormServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/czesc1-servlet-jsp/RankingGry/src/main/java/pl/merito/rankinggry/controller/GameFormServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/czesc1-servlet-jsp/RankingGry/src/main/java/pl/merito/rankinggry/controller/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/czesc1-servlet-jsp/RankingGry/src/main/java/pl/merito/rankinggry/controller/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/czesc1-servlet-jsp/RankingGry/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/czesc1-servlet-jsp/RankingGry/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/czesc1-servlet-jsp/RankingGry/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/czesc1-servlet-jsp/RankingGry/src/main/webapp/WEB-INF/views/fragments/header.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/czesc1-servlet-jsp/RankingGry/src/main/webapp/WEB-INF/views/fragments/header.jspf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +65,9 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -197,12 +196,25 @@
       <option name="presentableId" value="Default" />
       <updated>1791186669678</updated>
       <workItem from="1794819037533" duration="505000" />
-      <workItem from="1794819603079" duration="5229000" />
+      <workItem from="1794819603079" duration="6842000" />
     </task>
+    <task id="LOCAL-00001" summary="Etap 3: Przerobienie strony z html na jsp, dodanie style.css, utworzenie strony głównej oraz formsa do dodawania gier do rankingu.">
+      <option name="closed" value="true" />
+      <created>1794824980556</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1794824980556</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Etap 3: Przerobienie strony z html na jsp, dodanie style.css, utworzenie strony głównej oraz formsa do dodawania gier do rankingu." />
+    <option name="LAST_COMMIT_MESSAGE" value="Etap 3: Przerobienie strony z html na jsp, dodanie style.css, utworzenie strony głównej oraz formsa do dodawania gier do rankingu." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
