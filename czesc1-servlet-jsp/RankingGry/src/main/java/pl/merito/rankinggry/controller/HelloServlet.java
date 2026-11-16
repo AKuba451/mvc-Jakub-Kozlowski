@@ -20,7 +20,7 @@ public class HelloServlet extends HttpServlet {
         out.println("<!DOCTYPE html><html><body>");
         out.println("<h1>Witaj na rankingu Gier!</h1>");
         out.println("<p>To jest odpowiedź na żądanie GET.</p>");
-        out.println("<a href='index.html'>Powrót</a>");
+        out.println("<a href='index.jsp'>Powrót</a>");
         out.println("</body></html>");
     }
 

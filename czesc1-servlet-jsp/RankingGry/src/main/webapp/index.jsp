@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>Ranking Gier</title>
-</head>
-<body>
-<h1>Ranking Gier – część I</h1>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" isELIgnored="false" %>
+<%@ include file="/WEB-INF/views/fragments/header.jspf" %>
 
-<p><a href="hello">Wyślij żądanie GET do /hello</a></p>
+<h2>Witaj na Rankingu Gier ! </h2>
+<p>Twoja przeglądarka: ${header['User-Agent']}</p>
+<p>Kontekst aplikacji: ${pageContext.request.contextPath}</p>
+<p>Przykład operatorów EL: 2 + 3 = ${2 + 3}, 10 > 3 to #{10 gt 3}</p>
 
-<form action="hello" method="post">
-    <label>Twoje imię: <input type="text" name="name"></label>
-    <button type="submit">Wyślij żądanie POST</button>
-</form>
-</body>
-</html>
+<%@ include file="/WEB-INF/views/fragments/footer.jspf" %>
